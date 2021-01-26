@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        form{
+            margin: 150px 0 0 25em;
+            width: max-content;
+            display: grid;
+            grid-template: "table-column table-row"
+                           "submit submit";
+
+        }
+        input{
+            margin:  0 0 0 10px ;
+            padding: 0;
+            width: 100px;
+            border: none;
+            background-color: rgba(230, 223, 212, 0.87);
+        }
+
+        label{
+            margin-left: 30px;
+        }
+
+        #submit{
+            margin: 20px 0 0 10px;
+            align-self: center;
+            color: white;
+        }
+        .row{
+            margin:20px 0 0 48px;
+        }
+        #table-row{
+            margin: 20px 0 0 10px;
+        }
+        .color{
+            margin: 20px 0 0 45px;
+        }
+        table {
+            border: 1px solid black;
+            width: 30%;
+            margin: 12em 2em 2em 23em;
+            border-collapse: collapse;
+        }
+        div{
+            width: max-content;
+            margin-left: 170px;
+        }
+
+        td {
+            width: 10px;
+            height: 10px;
+            background-color: whitesmoke;
+            border: 1px solid black
+        }
+        body{
+            background-color: rgba(6, 6, 100, 0.89);
+        }
+        #clicck{
+            width: 50px;
+            margin: 0 0 0 100px;
+            position: absolute;
+            z-index: 1;
+            top: 260px;
+            left: 410px;
+        }
+        section{
+            margin: 0;
+            position: absolute;
+            z-index: 2;
+            top: 30px;
+        }
+        h1 {
+            font-family: Monoton;
+            font-size: 70px;
+            margin: 0.2em;
+        }
+        #pixel-art{
+            
+            color: #02b3e4;
+            background-color: #fff;
+            box-shadow: 5px 5px 5px 0 rgba(153,153,153,0.5);
+            margin: 30px 0 0 150px;
+        }
+        h5{
+            color: wheat;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 id="pixel-art"> Pixel Art Maker </h1>
+    </div>
+    <section>
+        <form>
+            <label>column</label>
+            <input id="table-column" type="number">
+    
+            <label class="row">rows </label>
+            <input id="table-row" type="number">
+
+            <label class="color"> color</label>
+            <input id="submit" type="color">
+
+            <button id="clicck">click</button>
+        </form>
+    </section>
+    <!-- <ol> 
+        <li>
+            ephraim
+        </li>
+        <li>
+            dubem
+        </li>
+        <li>
+            silas
+        </li>
+        <li>
+            success
+        </li>
+    </ol>
+
+    <ul id="para">
+        <li>
+            ephraim
+        </li>
+        <li>
+            dubem
+        </li>
+        <li>
+            silas
+        </li>
+        <li>
+            success
+        </li>
+    </ul> --> -->
+
+    <table id="table">
+        
+
+    </table>
+    <h5>Created by Dubem</h5>
+    <script src="script.js"></script>
+</body>
+</html>
