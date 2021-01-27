@@ -11,6 +11,109 @@
             margin: 0;
         }
         form{
+            margin: 150px 0 0 5em;
+            width: max-content;
+            display: grid;
+            grid-template: "table-column table-row"
+                           "submit submit";
+
+        }
+        input{
+            margin:  0 0 0 10px ;
+            padding: 0;
+            width: 100px;
+            border: none;
+            background-color: rgba(230, 223, 212, 0.87);
+        }
+
+        label{
+            margin-left: 30px;
+        }
+
+        #submit{
+            margin: 20px 0 0 10px;
+            align-self: center;
+            color: white;
+        }
+        .row{
+            margin:20px 0 0 48px;
+        }
+        #table-row{
+            margin: 20px 0 0 10px;
+        }
+        .color{
+            margin: 20px 0 0 45px;
+        }
+        table {
+            border: 1px solid black;
+            width: 50%;
+            margin: 12em  2em 2em 7em;
+            border-collapse: collapse;
+        }
+        div{
+            width: max-content;
+        }
+
+        td {
+            width: 10px;
+            height: 10px;
+            background-color: whitesmoke;
+            border: 1px solid black
+        }
+        tr{
+            height: 20px;
+            width: 30px;
+        }
+        body{
+            background-color: rgba(6, 6, 100, 0.89);
+        }
+        #clicck{
+            width: 50px;
+            margin: 0 0 0 100px;
+            position: absolute;
+            z-index: 1;
+            top: 260px;
+            left: 95px;
+        }
+        #clear{
+            width: 50px;
+            margin: 40px 0 0 50px;
+            position: absolute;
+            top: 250px;
+            left: 145px;
+        }
+        section{
+            margin: 0;
+            position: absolute;
+            z-index: 2;
+            top: -15px;
+            left: -20px;
+        }
+        h1 {
+            font-family: Monoton;
+            font-size: 30px;
+            margin: 0.2em 0.2em 0.2em 5em;
+        }
+        #pixel-art{
+            
+            color: #02b3e4;
+            background-color: #fff;
+            box-shadow: 5px 5px 5px 0 rgba(153,153,153,0.5);
+            margin: 50px 0 0 35px;
+        }
+        h5{
+            color: wheat;
+            position:fixed;
+            z-index: 3;
+            top: 300px;
+        }
+         @media screen and (min-width:1100px) {
+             
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        form{
             margin: 150px 0 0 25em;
             width: max-content;
             display: grid;
@@ -47,12 +150,12 @@
         table {
             border: 1px solid black;
             width: 30%;
-            margin: 12em 2em 2em 23em;
+            margin: 12em 2em 2em 20em;
             border-collapse: collapse;
         }
         div{
             width: max-content;
-            margin-left: 170px;
+            margin-left: 50px;
         }
 
         td {
@@ -60,6 +163,10 @@
             height: 10px;
             background-color: whitesmoke;
             border: 1px solid black
+        }
+        tr{
+            height: 20px;
+            width: 30px;
         }
         body{
             background-color: rgba(6, 6, 100, 0.89);
@@ -71,6 +178,13 @@
             z-index: 1;
             top: 260px;
             left: 410px;
+        }
+        #clear{
+            width: 50px;
+            margin: 40px 0 0 50px;
+            position: absolute;
+            top: 250px;
+            left: 460px;
         }
         section{
             margin: 0;
@@ -93,6 +207,7 @@
         h5{
             color: wheat;
         }
+         }
     </style>
 </head>
 <body>
@@ -111,6 +226,7 @@
             <input id="submit" type="color">
 
             <button id="clicck">click</button>
+            <button id="clear">clear</button>
         </form>
     </section>
     <!-- <ol> 
